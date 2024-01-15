@@ -1,0 +1,136 @@
+@font-face{
+    font-family: imprint;
+    src: url("assets/typo/ImprintMTShadow.ttf");
+}
+@font-face{
+    font-family: poppin;
+    src: url("assets/typo/Poppins-Regular.ttf");
+}
+@font-face{
+    font-family: emberly;
+    src: url("assets/typo/Emberly-SemiBold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+header{
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: black 2px 2px 30px;
+}
+.logo{
+    width: 400px;
+}
+.text-container{
+    font-size: 60px;
+    font-weight:300;
+    width: 300px;
+    animation: 3s text infinite;
+
+}
+.text-header{
+    margin: 30px;
+    font-family: emberly;
+}
+h1{
+    text-align: center;
+    margin: 40px 0;
+}
+.inner-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-buscador{
+    display: flex;
+    justify-content:center ;
+    width: 85%;
+    padding: 70px;
+}
+.resultado{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.resultado p{
+    padding: 20px 0;
+}
+select{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px ;
+    padding: 5px;
+    margin: 0 6px;
+}
+.carros-container{
+    width: 30%;
+    margin: 10px;
+}
+.car-images{
+    width: 100%;
+}
+p{
+    font-family: poppin;
+}
+/*++++++++++++++++++++++++++++++++++++ maclaren animation ++++++++++++++++++++++++++*/
+.mclaren-container{
+    position: fixed;
+    bottom: 0;
+}
+.mclaren-inner-container{
+    position: relative;
+    z-index: 4;
+}
+.mclaren{
+    width: 150px;
+    transition: all .5s ease-out;
+}
+.caucho{
+    position: absolute;
+    width: 25px;
+    bottom: 5px;
+    transition: all .5s ease-out;
+}
+#c1{
+    left: 104px;
+}
+#c2{
+    left: 13px;
+}
+.meta{
+    width: 85px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#detras-meta{
+    z-index: -1;
+}
+#frente-meta{
+    z-index: 7;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++ animation ++++++++++++++++++++++++++++++++++++*/
+
+@keyframes text {
+    25%{
+        transform: translateY(0px);
+
+    }50%{
+        transform: translateY(-90px);
+
+    }75%{   
+        transform: translateY(-180px);
+
+    }100%{
+        transform: translateY(-270px);
+
+    }
+    
+}

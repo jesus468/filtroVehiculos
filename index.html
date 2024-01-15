@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filtro</title>
+</head>
+<header>
+    <img class="logo" src="assets/img/logo/logo-filtro-de-carros.png" alt="">
+    <div class="text-container">
+        <div class="text-container2" >
+            <p class="text-header">Busca</p>
+            <p class="text-header">Encuentra</p>
+            <p class="text-header">Decíde</p>
+            <p class="text-header">Condúcelo</p>
+        </div>
+        
+    </div>
+    <!--<h1> BUSCADOR DE AUTOS </h1>-->
+</header>
+<body>
+    <div class="inner-container">
+        <div class="section-buscador">
+
+            <select name="marca" id="marca" class="select">
+                <option value="">seleccione</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="BMW">BMW</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="toyota">Toyota</option>
+                <option value="nissan">Nissan</option>
+                <option value="ford">Ford</option>
+                <option value="audi">Audi</option>
+                <option value="citroen">Citroen</option>
+                <option value="volvo">Volvo</option>
+                
+            </select>
+            <select name="modelo" id="modelo" class="select">
+                <option value="">seleccione</option>
+            </select>
+            <select name="year" id="year" class="select">
+
+            </select>
+            <select name="precio-rango" id="precio-rango" class="select">
+                <option value="">seleccione</option>
+                <option value="1" class="precios">1200$-6999$</option>
+                <option value="2" class="precios">7000$-11999$</option>
+                <option value="3" class="precios">12000$-17999$</option>
+                <option value="4" class="precios">18000$-24999$</option>
+                <option value="5" class="precios">>25000$</option>
+            </select>
+            <select name="puertas" id="puertas" class="select"> 
+                <option value="">seleccione</option>
+            </select>
+            <select name="color" id="color" class="select">
+                <option value="">seleccione</option>
+            </select>
+            <select name="transmision" id="transmision" class="select">
+                <option value="">seleccione</option>
+
+            </select>
+        </div>
+
+        <div class="section-buscador">
+            <div class="resultado">
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="mclaren-container"> 
+        <div class="mclaren-inner-container">
+            <img class="mclaren" src="assets/img/carrito-animacion/mclaren-blanco.png" alt="">
+            <img id="c1" class="caucho" src="assets/img/carrito-animacion/caucho.png" alt="">
+            <img id="c2" class="caucho" src="assets/img/carrito-animacion/caucho.png" alt="">
+            <img id="detras-meta" class="meta" src="assets/img/carrito-animacion/detras.png" alt="">
+            <img id="frente-meta" class="meta" src="assets/img/carrito-animacion/frente.png" alt="">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="dataBase.js"></script>
+</body>
+</html>
