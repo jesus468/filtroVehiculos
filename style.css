@@ -1,3 +1,4 @@
+/*++++++++++++++++++++++++++++++++++++++++++++ fonts ++++++++++++++++++++++++++++++++++++++++++++*/
 @font-face{
     font-family: imprint;
     src: url("assets/typo/ImprintMTShadow.ttf");
@@ -10,7 +11,7 @@
     font-family: emberly;
     src: url("assets/typo/Emberly-SemiBold.ttf");
 }
-
+/*++++++++++++++++++++++++++++++++++++++++++++ main page style ++++++++++++++++++++++++++++++++++++++++++++*/
 *{
     margin: 0;
     padding: 0;
@@ -52,6 +53,14 @@ h1{
     width: 85%;
     padding: 70px;
 }
+.sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sections label{
+    margin-bottom: 7px;
+}
 .resultado{
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +75,9 @@ select{
     box-shadow: 0px 3px 8px ;
     padding: 5px;
     margin: 0 6px;
+}
+option{
+    margin: 50px 0;
 }
 .carros-container{
     width: 30%;
@@ -105,7 +117,7 @@ p{
 .meta{
     width: 85px;
     position: fixed;
-    bottom: 0;
+    bottom: -10px;
     right: 0;
 }
 #detras-meta{
@@ -134,3 +146,6 @@ p{
     }
     
 }
+
+/*++++++++++++++++++++++++++++++++++++++++++++ media query ++++++++++++++++++++++++++++++++++++++++++++*/
+

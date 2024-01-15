@@ -398,7 +398,7 @@ function filtrarYear(car){
 }
 function filtarPrecio(car){
     if(carsSearch.Prec){
-        return(car.precio>cant1[carsSearch.Prec].min && car.precio<cant1[carsSearch.Prec].max)
+        return(car.precio>=cant1[carsSearch.Prec].min && car.precio<=cant1[carsSearch.Prec].max)
     }
     return car;
     
