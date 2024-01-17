@@ -247,7 +247,7 @@ p{
     }
     .hide-up{
         height: 400px ;
-        margin-top: -130%;
+        margin-top: -100%;
     }
     .section-buscador{
         flex-wrap: wrap;
