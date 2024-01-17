@@ -1,9 +1,25 @@
-//-----------------------------variables animacion mclaren ---------------
+//-----------------------------------------------------------------------------
+//-----------------------------variables animacion-----------------------------
+//-----------------------------------------------------------------------------
+
+//--------------- mclaren ---------------
 mclaren = document.querySelector(".mclaren");
 cauchos = document.querySelectorAll(".caucho");
+//--------------- phone menu ---------------
 
-//-----------------------------variables filtrado ---------------
+lineCont = document.querySelector(".lines-container")
+line1 = document.querySelector("#l1");
+line2 = document.querySelector("#l2");
+line3 = document.querySelector("#l3");
 
+firstSectionBuscador = document.querySelector(".section-buscador");
+
+//-----------------------------------------------------------------------------
+//-----------------------------variables filtrado -----------------------------
+//-----------------------------------------------------------------------------
+
+/* %%%%%%%%%%%%%%% adding the hide-up class for the phone menu animation %%%%%%%%%%%%%%%*/ 
+firstSectionBuscador.classList.add("hide-up");
 
 const cant1={
     1:{
@@ -429,22 +445,22 @@ function limpiarResultado(e){
     }
 }
 //######################################################################################################
-//######################################### Animacion Baja #############################################
+//########################################## Animaciones ###############################################
 //######################################################################################################
 
+
+
+//################################# Animacion Baja mclaren #############################################
 window.addEventListener("scroll", ()=>{
     
-    //console.log(window.outerHeight)
 
-    /*console.log(window.outerHeight)
-    console.log(window.scrollY)
+    if(window.innerWidth<=480){
+        porcentajeVentana = (parseInt((window.scrollY * 100 )/ (document.body.clientHeight - window.outerHeight)))*3;     
+    }else{
+        porcentajeVentana = (parseInt((window.scrollY * 100 )/ (document.body.clientHeight - window.outerHeight)))*9;
 
-    console.log(document.body.scrollHeight)
-*/
+    }
 
-
-    porcentajeVentana = (parseInt((window.scrollY * 100 )/ (document.body.clientHeight - window.outerHeight)))*9;
-    //console.log(porcentajeVentana);
     mclaren.style.marginLeft = porcentajeVentana + "%";
     cauchos[0].style.marginLeft = porcentajeVentana + "%";
     cauchos[1].style.marginLeft = porcentajeVentana + "%";
@@ -452,7 +468,20 @@ window.addEventListener("scroll", ()=>{
     cauchos[0].style.transform = "rotate("+porcentajeVentana+"deg)";
     cauchos[1].style.transform = "rotate("+porcentajeVentana+"deg)";
     
+})
 
-    //console.log(mclaren)
+
+//################################## Animacion phone menu  #############################################
+lineCont.addEventListener("click",()=>{
+    line1.classList.toggle("first-rotation")
+    line1.classList.toggle("first-rotationB")
+
+    line2.classList.toggle("less-width");
+    line2.classList.toggle("less-widthB");
+
+    line3.classList.toggle("second-rotation")
+    line3.classList.toggle("second-rotationB")
+    
+    firstSectionBuscador.classList.toggle("hide-up");
 
 })
