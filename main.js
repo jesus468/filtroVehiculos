@@ -456,7 +456,11 @@ window.addEventListener("scroll", ()=>{
 
     if(window.innerWidth<=480){
         porcentajeVentana = (parseInt((window.scrollY * 100 )/ (document.body.clientHeight - window.outerHeight)))*4;     
-    }else{
+    }
+    if (window.innerWidth<=960){
+        porcentajeVentana = (parseInt((window.scrollY * 100 )/ (document.body.clientHeight - window.outerHeight)))*5;     
+    }
+    else{
         porcentajeVentana = (parseInt((window.scrollY * 100 )/ (document.body.clientHeight - window.outerHeight)))*9;
 
     }

@@ -38,7 +38,6 @@ header{
     font-weight:300;
     width: 300px;
     animation: 3s text infinite;
-
 }
 .text-header{
     margin: 30px;
@@ -302,6 +301,34 @@ p{
     }
     #l3{
         margin-top: 14px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:960px){
+    .logo{
+        width: 40%;
+        height: 100px; 
+    }
+    header{
+        height: auto;
+    }
+    .header-container{
+        height: 100px;
+    }
+    .text-container{
+        font-size: 45px;
+        width: 220px;
+    }
+    .text-header{
+        margin: 39px;
+        font-family: emberly;
+    }
+    .section-buscador{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .section-buscador label{
+        margin-top: 15px;
     }
 }
 /* menor que 320 muy pequeños
